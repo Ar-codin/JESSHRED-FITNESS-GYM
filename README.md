@@ -3,7 +3,7 @@ source code
 ```diff
 
 - FRONT END:
-  UI +✔
+  UI + ✔
   LOGIN/LOGOUT FUNCTIONS
 + text in green
 ! text in orange
