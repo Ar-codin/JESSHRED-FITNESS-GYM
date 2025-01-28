@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url('../LOGOS_AND_PICS/Loginbg.jpg');
+    background-size: cover;
+}
+header {
+    position: absolute;
+    display: flex;
+    font-size: 1rem;
+    color: white;
+    top: 40px;
+}
+header img {
+    height: 50px;
+    margin-left: 40px;
+    margin-right: 10px;
+}
+header p {
+    font-size: 2.5rem;
+    font-family: "Lilita One", sans-serif;
+}
+
+.loginbox {
+    display: flex;
+    border: 5px solid transparent;
+    margin: 50px;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.parent1 {
+    display: flex;
+    border: 5px solid transparent;
+    padding: 20px;
+    justify-content: center;
+    margin-top: 10px;
+    
+}
+.parent2 {
+    padding: 5px;
+    border: 5px solid transparent;
+    width: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.parent1 p {
+    font-size: 30px;
+    font-family: "Lilita One", sans-serif;
+}
+.logininfo {
+    padding-bottom: 0px;
+}
+.logininfo .nickname {
+    width: 250px;
+    
+    
+}
+.logininfo .email {
+    width: 250px;
+}
+.logininfo .password {
+    width: 250px;
+}
+.logininfo .cpassword {
+    width: 250px;
+}
+.logininfo input {
+    padding: 10px;
+    border: 5px solid transparent;
+    border-radius: 30px;
+    width: 300px;
+}
+::placeholder {
+    font-family: "Lilita One", sans-serif;
+}
+.continuewith {
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-left: 150px; margin-right: 150px;
+}
+.continuewith .fb {
+    cursor: pointer;
+    border: 5px solid transparent;
+    background-color: #3636cc;
+    border-radius: 15px;
+    padding-top: 5px; padding-left: 16px; padding-right: 16px;
+}
+.continuewith img {
+    
+    height: 20px;
+}
+.continuewith .google {
+    cursor: pointer;
+    border: 5px solid transparent;
+    background-color: white;
+    border-radius: 15px;
+    padding-top: 5px; padding-left: 16px; padding-right: 16px;
+}
+.submit {
+    margin-left: 100px; margin-right: 100px;
+}
+.submit button {
+    margin-top: 25px;
+    padding: 10px;
+    border: 5px solid transparent;
+    border-radius: 30px;
+    width: 300px;
+    font-size: 15px;
+    font-family: "Lilita One", sans-serif;
+    cursor: pointer;
+    margin-bottom: 5px;
+ 
+}
+.signup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Lilita One", sans-serif;
+    text-transform: uppercase;
+    font-size: 13px;
+    margin-top: 0px;
+    
+}
+.signup p {
+    margin-right: 7px;
+}
+.signup a {
+    text-decoration: none;
+    color: #c4ae89;
+    font-size: 15px;
+}
+
+.showpass {
+    display: flex;
+   
+    justify-content: center;
+    align-items: center;
+    
+}
+.showpass button {
+    position: absolute;
+    margin-bottom: -1px;
+    margin-left: 200px;
+    border: none;
+    background: transparent;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .parent2 {
+        padding: auto;
+        border: 5px solid transparent;
+        width: auto;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-direction: column;
+    }
+    .logininfo {
+        margin: auto;
+        display: flex;
+        padding-bottom: 0px;
+    }
+}

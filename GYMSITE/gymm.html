@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Animation</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f1f1f1;
+        }
+
+        section {
+            min-height: 100vh;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            background-color: #f1f1f1;
+        }
+
+        .animate {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            font-size: 1rem;
+            text-align: center;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translatey(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate.active {
+            animation: fadeIn 0.8s ease-out forwards;
+        }
+
+        .section1 { background-color: #90caf9; }
+        .section2 { background-color: #a5d6a7; }
+        .section3 { background-color: #ffcc80; }
+    </style>
+</head>
+<body>
+    <section class="section1">
+        <div class="animate">Div 1</div>
+        <div class="animate">Div 2</div>
+        <div class="animate">Div 3</div>
+        <div class="animate">Div 4</div>
+    </section>
+    <section class="section2">
+        <div class="animate">Div 5</div>
+        <div class="animate">Div 6</div>
+        <div class="animate">Div 7</div>
+        <div class="animate">Div 8</div>
+    </section>
+    <section class="section3">
+        <div class="animate">Div 9</div>
+        <div class="animate">Div 10</div>
+        <div class="animate">Div 11</div>
+        <div class="animate">Div 12</div>
+    </section>
+    <script>
+        // Select all elements with the 'animate' class
+        const elements = document.querySelectorAll('.animate');
+
+        // Set up the Intersection Observer
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    // Add 'active' class to start the animation
+                    entry.target.classList.add('active');
+                } else {
+                    // Remove 'active' class to reset animation
+                    entry.target.classList.remove('active');
+                }
+            });
+        }, {
+            threshold: 0.2 // Trigger when 20% of the div is visible
+        });
+
+        // Observe each element
+        elements.forEach(el => observer.observe(el));
+    </script>
+    </body>
+</html>
+
