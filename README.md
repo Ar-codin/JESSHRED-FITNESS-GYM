@@ -20,9 +20,12 @@ source code
   xampp
   phpmyadmin
 
-! DATABASE
-  xampp
-  phpmyadmin
+! COMING SOON FEATURES:
+  EDIT PROFILE
+  SUBSCRIPTION TITLE IN PROFILE
+  BOOK MARK (PLAN MARK; E.X: DECRIPTION: 2 SETS 14 REPS)
+
+  
   
 # text in gray
 @@ text in purple (and bold)@@
