@@ -1,7 +1,7 @@
 # JESSHRED-FITNESS-GYM
 source code
 ```diff
-- text in red
+- -LOGIN/LOGOUT FUNCTIONS
 + text in green
 ! text in orange
 # text in gray
@@ -11,7 +11,7 @@ FR
 
 FEATURES: 
 
--LOGIN/LOGOUT FUNCTIONS
+
 REGISTER/SINGUP FUNCTIONS
 PAYMENT FUNCTIONS
 
