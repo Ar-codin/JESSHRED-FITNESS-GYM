@@ -1,7 +1,10 @@
 # JESSHRED-FITNESS-GYM
 source code
 ```diff
-- -LOGIN/LOGOUT FUNCTIONS
+
+- FRONT END:
+  UI +✔
+  LOGIN/LOGOUT FUNCTIONS
 + text in green
 ! text in orange
 # text in gray
