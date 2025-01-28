@@ -3,7 +3,13 @@ source code
 ```diff
 
 - FRONT END:
-  UI + ✔
+  UI 
+  HOMEPAGE
+  TRAINING SECTION (DESIGNS NEEDS TO IMPROVE)
+  PRICING
+  ABOUT US PAGE
+  CONTACT US PAGE
+  
   LOGIN/LOGOUT FUNCTIONS
 + text in green
 ! text in orange
