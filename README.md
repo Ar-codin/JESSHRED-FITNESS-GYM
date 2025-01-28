@@ -11,13 +11,15 @@ source code
   CONTACT US PAGE
   ADMIN PAGE
 
-: bACK END:
++ bACK END:
   LOGIN/LOGOUT FUNCTIONS
   SINGUP/REGISTER FUNCTIONS
   PAYMENT FUNCTION
 
-+ text in green
-! text in orange
+! DATABASE
+  xampp
+  phpmyadmin
+  
 # text in gray
 @@ text in purple (and bold)@@
 ```
