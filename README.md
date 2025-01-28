@@ -16,6 +16,10 @@ source code
   SINGUP/REGISTER FUNCTIONS
   PAYMENT FUNCTION
 
++ DATABASE
+  xampp
+  phpmyadmin
+
 ! DATABASE
   xampp
   phpmyadmin
