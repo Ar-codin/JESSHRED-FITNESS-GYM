@@ -1,0 +1,170 @@
+        <br /><br /><br /><br /><br /><br /><br /><br />
+        <br /><br /><br /><br /><br /><br /><br /><br />
+        <br /><br /><br /><br /><br /><br /><br /><br />
+        <a name="CHEST PROGRAM"></a>
+        <center>
+            <h1>CHEST  WORKOUT</h1>
+        </center>
+        <ul>
+            <p><b>Flat bench press</b></p>
+            <p><b>Pec deck flyes</b></p>
+            <p><b>Incline bench barbel press</b></p>
+            <p><b>Incline dumble press</b></p>
+            <p><b>Incline dumble flyes</b></p>
+            <p><b>Decline barbel bench press</b></p>
+            <p><b>Cable crossover </b></p>
+        </ul>
+        <br /><br /><br /><br /><br /><br /><br /><br />
+        <br /><br /><br /><br /><br /><br /><br /><br />
+        <br /><br /><br /><br /><br /><br /><br /><br />
+        <a name="BACK PROGRAM"></a>
+        <center>
+            <h1>BACK  WORKOUT</h1>
+        </center>
+        <ul>
+            <p><b>Machine lats pull down</b></p>
+            <p><b>Closed grip lats pull down </b></p>
+            <p><b>Cable rowing</b></p>
+            <p><b>T-bar row </b></p>
+            <p><b>Bent barbell row</b></p>
+            <p><b>Single dumbell row </b></p>
+            <p><b>Dead lift </b></p>
+        </ul>
+        <br /><br /><br /><br /><br /><br /><br /><br />
+        <br /><br /><br /><br /><br /><br /><br /><br />
+        <br /><br /><br /><br /><br /><br /><br /><br />
+        <a name="SHOULDER PROGRAM"></a>
+        <center>
+            <h1>SHOULDER  WORKOUT</h1>
+        </center>
+        <ul>
+            <p><b>Shoulder Dumbell Press</b></p>
+            <p><b>Military Barbell Press </b></p>
+            <p><b>Side Lateral Dumbell Raisses</b></p>
+            <p><b>Rear delts Dumbell raises</b></p>
+            <p><b>Front dumbell raises</b></p>
+        </ul>
+        <br /><br /><br /><br /><br /><br /><br /><br />
+        <br /><br /><br /><br /><br /><br /><br /><br />
+        <br /><br /><br /><br /><br /><br /><br /><br />
+        <a name="BICEP PROGRAM"></a>
+        <center>
+            <h1>BICEP  WORKOUT</h1>
+        </center>
+        <ul>
+            <p><b>barbell curl</b></p>
+            <p><b>Dumbelll curl</b></p>
+            <p><b>Preacher curl</b></p>
+            <p><b>Hammer dumbell curl</b></p>
+        </ul>
+        <br /><br /><br /><br /><br /><br /><br /><br />
+        <br /><br /><br /><br /><br /><br /><br /><br />
+        <br /><br /><br /><br /><br /><br /><br /><br />
+        <a name="TRICEP PROGRAM"></a>
+        <center>
+            <h1>TRICEP  WORKOUT</h1>
+        </center>
+        <ul>
+            <p><b>straight bar tricep pull down</b></p>
+            <p><b>Closed grip barbel press </b></p>s
+            <p><b>Lying tricep extention</b></p>
+            <p><b>Rope tricep pull down</b></p>
+        </ul>
+        <br /><br /><br /><br /><br /><br /><br /><br />
+        <br /><br /><br /><br /><br /><br /><br /><br />
+        <br /><br /><br /><br /><br /><br /><br /><br />
+        <a name="FORE ARM PROGRAM"></a>
+        <center>
+            <h1>FORE ARM WORKOUT</h1>
+        </center>
+        <ul>
+            <p><b>BARBELL REVERSE CURL</b></p>
+            <p><b>BARBELL FOREARM CURL </b></p>
+        </ul>
+        <br /><br /><br /><br /><br /><br /><br /><br />
+        <br /><br /><br /><br /><br /><br /><br /><br />
+        <br /><br /><br /><br /><br /><br /><br /><br />
+        <a name="TRAPS PROGRAM"></a>
+        <center>
+            <h1> TRAPS WORKOUT</h1>
+        </center>
+        <ul>
+            <p><b>DUMBELL SHRUGS</b></p>
+            <p><b>BARBELL SHRUGS </b></p>
+            <p><b>UPRIGHT ROWING CLOSED GRIP</b></p>
+        </ul>
+    
+    
+    
+    
+    
+    
+    
+     <script>
+        document.getElementById('search').addEventListener('input', function() {
+            var filter = this.value.toLowerCase();
+            var items = document.querySelectorAll('.programsbox, .programsbox1');
+            var found = false;
+
+            items.forEach(function(item) {
+                var name = item.querySelector('h1').textContent.toLowerCase();
+                if (name.indexOf(filter) > -1) {
+                    item.style.display = 'flex';
+                    found = true;
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+
+            // Show or hide the "No results found" message
+            var noResults = document.querySelector('.no-results');
+            if (found) {
+                noResults.style.display = 'none'; // Hide message if results are found
+            } else {
+                noResults.style.display = 'block'; // Show message if no results
+            }
+        });
+    </script>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <!DOCTYPE html >
+<html lang="en">
+    <head>
+        <a name="Profile"></a>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible"content="IE-edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    </head>
+    <body>
+        <h3>
+            <center>
+            <font face="cinzel" size="5">
+            <p> <b>CORE PROGRAM</b></p>
+        </center>
+        </h3>
+        <ul>
+            <p><b>Incline sit up</b></p>
+            <p><b>Knee lift </b></p>
+            <p><b>Side bend</b></p>
+        </ul>
+    </body>
+    

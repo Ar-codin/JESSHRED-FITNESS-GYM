@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url('../LOGOS_AND_PICS/Loginbg.jpg');
+    background-size: cover;
+}
+header {
+    position: absolute;
+    display: flex;
+    font-size: 1rem;
+    color: white;
+    top: 40px;
+}
+header img {
+    height: 50px;
+    margin-left: 40px;
+    margin-right: 10px;
+}
+header p {
+    font-size: 2.5rem;
+    font-family: "Lilita One", sans-serif;
+}
+
+.loginbox {
+    display: flex;
+    border: 5px solid transparent;
+    margin: 50px;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.parent1 {
+    display: flex;
+    border: 5px solid transparent;
+    padding: 20px;
+    justify-content: center;
+    margin-top: 10px;
+}
+.parent2 {
+    padding: 5px;
+    
+}
+.parent1 p {
+    font-size: 30px;
+    font-family: "Lilita One", sans-serif;
+}
+.logininfo {
+    padding-bottom: 15px;
+}
+.logininfo .password {
+    margin-bottom: 10px;
+}
+.logininfo input {
+    padding: 10px;
+    border: 5px solid transparent;
+    border-radius: 30px;
+    width: 300px;
+}
+::placeholder {
+    font-family: "Lilita One", sans-serif;
+}
+.continuewith {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    
+}
+.continuewith .fb {
+    cursor: pointer;
+    border: 5px solid transparent;
+    background-color: #3636cc;
+    border-radius: 15px;
+    padding-top: 5px; padding-left: 16px; padding-right: 16px;
+}
+.continuewith img {
+    
+    height: 20px;
+}
+.continuewith .google {
+    cursor: pointer;
+    border: 5px solid transparent;
+    background-color: white;
+    border-radius: 15px;
+    padding-top: 5px; padding-left: 16px; padding-right: 16px;
+}
+.forgot {
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+.forgot a {
+    font-size: 12px;
+    margin: 0;
+    color: white;
+    text-decoration: none;
+}
+#check {
+    margin-right: 10px;
+}
+.submit button {
+    margin-top: 25px;
+    padding: 10px;
+    border: 5px solid transparent;
+    border-radius: 30px;
+    width: 300px;
+    font-size: 15px;
+    font-family: "Lilita One", sans-serif;
+    cursor: pointer;
+    margin-bottom: 25px;
+}
+.signup {
+    display: flex;
+    justify-content: center;
+    font-family: "Lilita One", sans-serif;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+.signup p {
+    margin-right: 7px;
+}
+.signup a {
+    text-decoration: none;
+    color: #c4ae89;
+    font-size: 15px;
+}
+.showpass {
+    display: flex;
+   
+    justify-content: center;
+    align-items: center;
+    
+}
+.showpass button {
+    position: absolute;
+    margin-bottom: 7px;
+    margin-left: 250px;
+    border: none;
+    background: transparent;
+}
