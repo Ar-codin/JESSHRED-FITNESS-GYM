@@ -1,0 +1,390 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    transition: .2s linear;
+    text-decoration: none;
+    font-family: "Kanit", sans-serif;   
+    font-weight: 500;
+    color: white;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+
+}
+
+
+
+/* FOR HOME PADDING */
+.homepage {
+    padding: 2rem 9%;
+}
+/* FOR HOME PADDING */
+
+
+
+/* FOR ANCHOR TAG */
+a {
+    text-decoration: none;
+}
+/* FOR ANCHOR TAG */
+
+
+
+/* FOR HEADER PADDING */
+.headerpad {
+    
+    animation: toptobot 2s ease-In-out forwards;
+    display: flex;
+    font-size: 1rem;
+    color: white;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background: black;
+    transition: background-color 0.3s ease-in-out;
+    padding: 20px 15px 20px;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    
+}
+@keyframes toptobot {
+    from {
+        opacity: 0;
+        transform: translatey(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.menu {
+    display: none;
+}
+/* FOR HEADER PADDING */
+
+
+/* FOR HEADER DISSAPEAR WHEN SCROLLING */
+header.scrolled {
+    background-color: black;
+    opacity: 0.98;
+    
+}
+/* FOR HEADER DISSAPEAR WHEN SCROLLING */
+
+
+/* FOR HEADER IMG */
+.logotxt {
+    display: flex;
+    margin-left: 30px;
+}
+header img {
+    height: 30px;
+    margin-right: 5px;
+}
+/* FOR HEADER IMG */
+
+
+
+/* FOR JFG TEXT LOGO IN HEADER */
+.jfg {
+    font-size: 1.5rem;
+    margin-right: 230px;
+}
+/* FOR JFG TEXT LOGO IN HEADER */
+
+
+/* FOR NAV ANCHOR POSTIONING */
+nav a {
+    position: relative;
+    font-size: 20px;
+    color: white;
+    margin-right: 5px;
+    text-align: center;
+    box-sizing: border-box;
+    white-space: nowrap;
+    width: 150px;
+    
+}
+/* FOR NAV ANCHOR POSTIONING */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    position: relative;
+    display: inline-block;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+}
+nav .hide1 li .dropdown {
+    display: none;
+    position: absolute;
+    top: 140%;
+    left: 0;
+    background-color: #292828;
+    padding: 5px 5px;
+    border-radius: 5px;
+    z-index: 999;
+    width: 173px;
+    border-top: 4px solid #c4ae89;
+
+    overflow: hidden;
+}
+nav .dropdown a {
+    font-size: 15px;
+    padding-left: 20px; padding-right: 20px;
+   
+    box-sizing: border-box;
+    border: 5px solid transparent;
+    width: 100%;
+}
+nav .hide1 li:hover::after {
+    content: '';
+    position: absolute;
+    top: 100%; /* Align with the bottom of the parent link */
+    left: 0;
+    width: 100%; /* Full width of the parent */
+    height: 20px; /* Height of the gap */
+    background: transparent; /* Invisible but hoverable */
+}
+
+
+nav .hide1 li .dropdown li {
+    display: block;
+    
+}
+
+nav .hide1 li:hover .dropdown {
+    display: block;
+    
+}
+
+nav .dropdown a:hover {
+    border-radius: 5px;
+    background-color: #3F3F3F;
+    
+
+}
+/* FOR NAV ANCHOR HOVER */
+nav .hover1:hover, nav .hover2:hover, nav .hover3:hover, nav .hover4:hover {
+    border-radius: 5px;
+    background-color: #3F3F3F;
+
+    
+}
+
+
+/* FOR NAV ANCHOR HOVER */
+
+/* FOR NAV ANCHOR (PARA MAY LINYA SA BABA NG TEXT PAG HOVER)*/
+nav .hover1:after, nav .hover3:after {
+	content: '';
+	height: 5px;
+	width: 102%;
+	background: #c4ae89;
+    position: absolute;
+    right: 0;
+    bottom: -20px;
+    display: none;
+}
+
+nav .hover1:hover:after, nav .hover3:hover:after, nav .hover4:hover:after {
+    display: block;
+}
+/* FOR NAV ANCHOR (PARA MAY LINYA SA BABA NG TEXT PAG HOVER)*/
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: black;
+    box-shadow: -10x 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-size: 1rem;
+    color: white;
+    font-weight: 500;
+    font-style: normal;
+    padding: 10px;
+    overflow: hidden;
+    
+}
+.sidebar .remove {
+    padding-left: 180px;
+    height: 50px;
+}
+.down {
+    position: absolute;
+    padding-left: 5px;
+    transition: transform 0.3s ease;
+}
+.homehover2 .dropdown, .homehover .dropdown {
+    display: none;
+}
+.homehover {
+    border: 5px solid transparent;
+    border-radius: 15px;
+    width: 100%;
+}
+.loginside {
+    border: 5px solid transparent;
+    border-radius: 15px;
+    width: 100%;
+    margin-top: 25px;
+    justify-content: center;
+    display: flex;
+    
+}
+.loginsidebar {
+    border: 5px solid transparent;
+    border-radius: 15px;
+    background-color: #c4ae89;
+    padding-top: 2px; padding-bottom: 2px;
+    padding-left: 75px; padding-right: 75px;
+}
+.homehover2 .dropdown.active, .homehover .dropdown.active {
+    display: block;
+}
+.homehover2 .dropdown, .homehover .dropdown {
+    background-color: #292828;
+    overflow: hidden;
+    padding: 10px 0px;
+    width: 100%;
+}
+.homehover1 {
+    border: 5px solid transparent;
+    border-radius: 15px;
+    width: 100%;
+    
+}
+.homehover:hover, .homehover1:hover {
+    border-radius: 15px;
+    background-color: #3F3F3F;
+    width: 100%;
+}
+
+.homehover1 .down.rotated {
+    transform: translateY(0%) rotate(180deg); /* Rotate and keep centered */
+}
+
+/* FOR LOGIN BUTTON POSTIONING*/
+.parentpndb {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px 0px;
+    position: absolute;
+    
+}
+.pndb {
+    margin: 0;
+    padding: 0;
+    
+   
+}
+
+.overlaydown {
+    position: absolute;
+    z-index: 2000;
+    right: 37px;
+    top: 35px;
+}
+#profiledown {
+    height: 20px;
+    
+    
+}
+#profile-img {
+    position: absolute;
+    margin-left: 280px;
+    top: 1px;
+    
+}
+.pndb img {
+    height: 50px;
+    margin: 10px 10px;
+    
+}
+.login {
+    margin-left: 230px;
+    padding: 3px 30px;;
+    color: black;
+    border-radius: 25px;
+	border: 3px solid #c4ae89;
+    background-color: #c4ae89;
+}
+.login:hover {
+    color: white;
+}
+.logout {
+    padding: 3px 30px;;
+    color: black;
+    border-radius: 25px;
+	border: 3px solid #c4ae89;
+    background-color: #c4ae89;
+}
+.logout:hover {
+    color: white;
+}
+
+
+.profiledropdown {
+    top: 65px;
+    position: absolute;
+    z-index: 1000;
+    background-color: white;
+    color: black;
+    right: 20px;
+    border-radius: 10px;
+    display: none;
+    flex-direction: column;
+    padding: 10px 30px 10px;
+    
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    
+}
+
+.profiletop {
+    
+    display: flex;
+    gap: 20px;
+}
+.profiletop h1 {
+    font-size: 15px;
+    color: black;
+}
+.profiletop img {
+    height: 70px;
+}
+.profiletop1 {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+.profiletop1 button {
+    border-radius: 5px;
+    color: black;
+}
+.profilebot {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+   
+}

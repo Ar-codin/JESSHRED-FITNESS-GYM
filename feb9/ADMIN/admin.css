@@ -1,0 +1,535 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Kanit", sans-serif;   
+}
+a {
+    text-decoration: none;
+
+}
+html, body {
+    height: 100%;
+}
+.header {
+    background-color: #363637;
+    height: 70px;
+    color: white;
+}
+.header1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 35px;
+    color: white;
+}
+.header1 a {
+    color: inherit;
+}
+.header1 .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 9px;
+}
+.header1 .viewsite {
+    color: white;
+}
+.header img {
+    height: 50px;
+}
+.login {
+    color: black;
+}
+.login1 {
+    border: 3px solid transprent;
+    border-radius: 2px;
+    background-color: white;
+    padding: 7px 10px;
+   
+}
+
+
+.sidebutton {
+    background-color: #363637;
+    display: flex;
+}
+.side {
+    margin: 10px 10px;
+    padding: 0px 15px;
+    width: 100%;
+    height: calc(100vh - 90px);
+    display: flex;
+    gap: 30px;
+    
+}
+.panel {
+    border: 3px solid transparent;
+    width: 100%;
+    margin: 10px 0px 0px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding: 10px 10px;
+}
+.panel a {
+    color: inherit;
+}
+  
+.side1 {
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    min-width: 200px;
+}
+
+.side1 .panel.active {
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+}
+.side1 .panel:hover {
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+}
+
+.side2 {
+    background-color: #E8E8EA;
+    border-radius: 5px;
+    width: 100%;
+    padding: 15px 15px;
+    flex-direction: column;
+    display: flex;
+    gap: 30px;
+    overflow: hidden;
+    
+}
+.side2 > div {
+    display: none;
+}
+
+
+
+
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    
+}
+#dashboardContent {
+    display: none;
+}
+.topsection, .topsection1, .topsection2, .topsection3 {
+    display: flex;
+    background-color: white;
+    width: 100%;
+    margin: 5px 5px;
+    border-radius: 10px;
+    
+}
+
+.topsectiontitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    line-height: 1.5;
+}
+.topsectiontitle h1 {
+    font-size: 15px;
+    color: #8C8D8E;
+}
+.topsectiontitle button {
+    border-radius: 5px;
+    width: 60px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.topsectiontitle button:hover {
+    background-color: red;
+    color: white;
+    
+}
+.topsection img, .topsection1 img, .topsection2 img, .topsection3 img {
+    height: 55px;
+    
+}
+.topsectionlogo {
+    background-color: #EFDD72;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 40%;
+}
+.topsectionlogo1 {
+    background-color: #F75635;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 40%;
+}
+.topsectionlogo2 {
+    background-color: #0AD00A;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 40%;
+}
+.topsectionlogo3 {
+    background-color: #0A50D0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 40%;
+}
+.topsection, .topsection1, .topsection2, .topsection3 {
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+}
+
+.bottom {
+    flex-direction: column;
+    max-height: 410px;
+    display: flex;
+    background-color: white;
+    min-height: 410px;
+    padding: 5px 5px;
+    margin-top: 10px;
+}
+.latest1 {
+    overflow: hidden;
+    height: 50%;
+    display: flex;
+    gap: 20px;
+    
+}
+.logins {
+    display: flex;
+    flex-direction: column;
+    
+    width: 100%;
+    max-height: 100%;
+    
+    
+    overflow-x: auto;
+    box-sizing: border-box;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+    
+    
+}
+/* Target the scrollbar for Webkit-based browsers */
+.logins::-webkit-scrollbar, .customersubs::-webkit-scrollbar, .usersdata::-webkit-scrollbar {
+    width: 5px; /* Height of the horizontal scrollbar */
+}
+
+/* Scrollbar track (the area behind the scroll thumb) */
+.logins::-webkit-scrollbar-track, .customersubs::-webkit-scrollbar-track, .usersdata::-webkit-scrollbar-track {
+    background: white; /* Dark background color */
+    border-radius: 15px; /* Optional: rounded corners */
+}
+
+/* Scrollbar thumb (the draggable part) */
+.logins::-webkit-scrollbar-thumb, .customersubs::-webkit-scrollbar-thumb, .usersdata::-webkit-scrollbar-thumb {
+    background: black; /* Red scroll thumb */
+    border-radius: 5px; /* Rounded corners for the thumb */
+}
+
+/* Hover effect for the scrollbar thumb */
+.logins::-webkit-scrollbar-thumb:hover, .customersubs::-webkit-scrollbar-thumb:hover, .usersdata::-webkit-scrollbar-thumb:hover {
+    background: #ff5555; /* Brighter red on hover */
+}
+.logins1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: white;
+    
+    padding: 5px 25px;
+    gap: 20px;
+    
+    border: 3px solid #B3B3B3;
+}
+.logins1 img {
+    height: 50px;
+}
+.logins1 h1 {
+    font-weight: 500;
+    font-size: 20px;
+}
+.logins1 span {
+    font-weight: 200;
+}
+.logins3 {
+    display: flex;
+}
+
+
+
+
+.customers {
+    display: block;
+    height: 100%;
+    flex-direction: column;
+}
+.users {
+    display: block;
+    
+    height: 100%;
+    flex-direction: column;
+}
+.message {
+    display: block;
+    
+    height: 100%;
+    flex-direction: column;
+}
+.customertop, .userstop, .messagestop {
+    display: flex;
+    gap: 20px;
+    
+}
+.customerbar, .usersbar, .messagesbar {
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 280px;
+    height: 150px;
+    gap: 10px;
+    
+}
+.customerbar1 {
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 220px;
+    height: 150px;
+    
+}
+.customerimg {
+    background-color: #F75635;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+}
+.usersimg {
+    background-color: #0A50D0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+}
+.messagesimg {
+    background-color: #0AD00A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+}
+.customerimg1 {
+    background-color: #0EAA5C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+}
+.customerimg img, .customerimg1 img, .usersimg img, .messagesimg img {
+    height: 70px;
+}
+.customertitle, .userstitle, .messagestitle {
+    margin: 10px 0px;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px 20px 5px;
+}
+
+.customertitle h1, .userstitle h1, .messagestitle h1 {
+    font-size: 20px;
+}
+.customertitle p, .userstitle p, .messagestitle p {
+    font-weight: 300;
+    align-self: flex-end;
+    font-size: 30px;
+}
+
+.customerbot {
+    display: flex;
+    width: 100%;
+    margin: 10px 0px;
+    height: 100%;
+    
+    gap: 10px;
+}
+
+
+.usersbar2 {
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    width: auto;
+    align-items: center;
+    max-height: 350px;
+}
+.customerbar2 {
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    width: 100%;
+    align-items: center;
+    max-height: 350px;
+    
+}
+
+.customersubs, .usersdata {
+    display: flex;
+    background-color: white;
+    max-height: 300px;
+    padding: 15px 15px;
+    width: 90%;
+    border-radius: 10px;
+    flex-direction: column;
+    overflow: auto;
+}
+
+.csname {
+    justify-content: space-between;
+    min-height: 50px;
+    width: auto;
+    display: flex;
+    padding: 5px 10px;
+    align-items: center;
+}
+.csname h1 {
+    font-size: 20px;
+}
+.csname .check:hover {
+    color: red;
+    cursor: default;
+}
+.csname span {
+    font-weight: 400;
+}
+.csname button {
+    background-color: #0EAA5C;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    color: white;
+    font-weight: 600; 
+}
+.csname button:hover {
+    background-color: black;
+}
+
+.overlay {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure it appears on top */
+}
+
+.overlay-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 20%;
+
+    
+}
+.overlay-content1 {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+.overlay-content .num {
+    background: yellow;
+}
+.overlay-content .name {
+    background: blue;
+    color: white;
+}
+.oc2 {
+    display: flex;
+    flex-direction: column;
+    
+    padding: 20px 20px;
+}
+.oc2 form button {
+    background-color: red;
+}
+.overlay-content img, .overlay-content1 img {
+    height: 300px;
+}
+#close-btn {
+    
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#check {
+    border: 2px solid white;
+    background-color: #0EAA5C;
+}
+#ex {
+    border: 2px solid white;
+    background-color: red; 
+}
+
+#check:hover {
+    border: 2px solid black;
+}
+#ex:hover {
+    border: 2px solid black;
+}
+#close-btn:hover {
+    background: red;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+.modal img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+}
+.modal .close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    z-index: 1001;
+}

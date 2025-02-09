@@ -1,0 +1,1141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    transition: .2s linear;
+    text-decoration: none;
+    font-family: "Kanit", sans-serif;   
+    font-weight: 500;
+    
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    background-color: black;
+    color: white;
+}
+
+
+
+/* FOR HOME PADDING */
+.homepage {
+    padding: 2rem 9%;
+}
+/* FOR HOME PADDING */
+
+
+
+/* FOR ANCHOR TAG */
+a {
+    text-decoration: none;
+}
+/* FOR ANCHOR TAG */
+
+
+
+/* FOR HEADER PADDING */
+.headerpad {
+    
+    animation: toptobot 2s ease-In-out forwards;
+    display: flex;
+    font-size: 1rem;
+    color: white;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background: black;
+    transition: background-color 0.3s ease-in-out;
+    padding: 20px 15px 20px;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    
+}
+@keyframes toptobot {
+    from {
+        opacity: 0;
+        transform: translatey(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.menu {
+    display: none;
+}
+/* FOR HEADER PADDING */
+
+
+/* FOR HEADER DISSAPEAR WHEN SCROLLING */
+header.scrolled {
+    background-color: black;
+    opacity: 0.98;
+    
+}
+/* FOR HEADER DISSAPEAR WHEN SCROLLING */
+
+
+/* FOR HEADER IMG */
+.logotxt {
+    display: flex;
+    margin-left: 30px;
+}
+header img {
+    height: 30px;
+    margin-right: 5px;
+}
+/* FOR HEADER IMG */
+
+
+
+/* FOR JFG TEXT LOGO IN HEADER */
+.jfg {
+    font-size: 1.5rem;
+    margin-right: 230px;
+}
+/* FOR JFG TEXT LOGO IN HEADER */
+
+
+/* FOR NAV ANCHOR POSTIONING */
+nav a {
+    position: relative;
+    font-size: 20px;
+    color: white;
+    margin-right: 5px;
+    text-align: center;
+    box-sizing: border-box;
+    white-space: nowrap;
+    width: 150px;
+    
+}
+/* FOR NAV ANCHOR POSTIONING */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    position: relative;
+    display: inline-block;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+}
+nav .hide1 li .dropdown {
+    display: none;
+    position: absolute;
+    top: 140%;
+    left: 0;
+    background-color: #292828;
+    padding: 5px 5px;
+    border-radius: 5px;
+    z-index: 999;
+    width: 173px;
+    border-top: 4px solid #c4ae89;
+
+    overflow: hidden;
+}
+nav .dropdown a {
+    font-size: 15px;
+    padding-left: 20px; padding-right: 20px;
+   
+    box-sizing: border-box;
+    border: 5px solid transparent;
+    width: 100%;
+}
+nav .hide1 li:hover::after {
+    content: '';
+    position: absolute;
+    top: 100%; /* Align with the bottom of the parent link */
+    left: 0;
+    width: 100%; /* Full width of the parent */
+    height: 20px; /* Height of the gap */
+    background: transparent; /* Invisible but hoverable */
+}
+
+
+nav .hide1 li .dropdown li {
+    display: block;
+    
+}
+
+nav .hide1 li:hover .dropdown {
+    display: block;
+    
+}
+
+nav .dropdown a:hover {
+    border-radius: 5px;
+    background-color: #3F3F3F;
+    
+
+}
+/* FOR NAV ANCHOR HOVER */
+nav .hover1:hover, nav .hover2:hover, nav .hover3:hover, nav .hover4:hover {
+    border-radius: 5px;
+    background-color: #3F3F3F;
+
+    
+}
+
+
+/* FOR NAV ANCHOR HOVER */
+
+/* FOR NAV ANCHOR (PARA MAY LINYA SA BABA NG TEXT PAG HOVER)*/
+nav .hover1:after, nav .hover3:after {
+	content: '';
+	height: 5px;
+	width: 102%;
+	background: #c4ae89;
+    position: absolute;
+    right: 0;
+    bottom: -20px;
+    display: none;
+}
+
+nav .hover1:hover:after, nav .hover3:hover:after, nav .hover4:hover:after {
+    display: block;
+}
+/* FOR NAV ANCHOR (PARA MAY LINYA SA BABA NG TEXT PAG HOVER)*/
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: black;
+    box-shadow: -10x 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-size: 1rem;
+    color: white;
+    font-weight: 500;
+    font-style: normal;
+    padding: 10px;
+    overflow: hidden;
+    
+}
+.sidebar .remove {
+    padding-left: 180px;
+    height: 50px;
+}
+.down {
+    position: absolute;
+    padding-left: 5px;
+    transition: transform 0.3s ease;
+}
+.homehover2 .dropdown, .homehover .dropdown {
+    display: none;
+}
+.homehover {
+    border: 5px solid transparent;
+    border-radius: 15px;
+    width: 100%;
+}
+.loginside {
+    border: 5px solid transparent;
+    border-radius: 15px;
+    width: 100%;
+    margin-top: 25px;
+    justify-content: center;
+    display: flex;
+    
+}
+.loginsidebar {
+    border: 5px solid transparent;
+    border-radius: 15px;
+    background-color: #c4ae89;
+    padding-top: 2px; padding-bottom: 2px;
+    padding-left: 75px; padding-right: 75px;
+}
+.homehover2 .dropdown.active, .homehover .dropdown.active {
+    display: block;
+}
+.homehover2 .dropdown, .homehover .dropdown {
+    background-color: #292828;
+    overflow: hidden;
+    padding: 10px 0px;
+    width: 100%;
+}
+.homehover1 {
+    border: 5px solid transparent;
+    border-radius: 15px;
+    width: 100%;
+    
+}
+.homehover:hover, .homehover1:hover {
+    border-radius: 15px;
+    background-color: #3F3F3F;
+    width: 100%;
+}
+
+.homehover1 .down.rotated {
+    transform: translateY(0%) rotate(180deg); /* Rotate and keep centered */
+}
+
+/* FOR LOGIN BUTTON POSTIONING*/
+.parentpndb {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px 0px;
+    position: absolute;
+    
+}
+.pndb {
+    margin: 0;
+    padding: 0;
+    
+    
+}
+
+.overlaydown {
+    position: absolute;
+    z-index: 2000;
+    right: 20px;
+    top: 35px;
+}
+#profiledown {
+    height: 20px;
+    
+    
+}
+#profile-img {
+    position: absolute;
+    margin-left: 280px;
+    top: 1px;
+    border-radius: 50px;
+}
+.pndb img {
+    height: 50px;
+    margin: 10px 10px;
+    
+}
+.login {
+    margin-left: 230px;
+    padding: 3px 30px;;
+    color: black;
+    border-radius: 25px;
+	border: 3px solid #c4ae89;
+    background-color: #c4ae89;
+}
+.login:hover {
+    color: white;
+}
+.logout {
+    padding: 3px 30px;
+    color: black;
+    border-radius: 25px;
+	border: 3px solid #c4ae89;
+    background-color: #c4ae89;
+}
+.logout:hover {
+    color: white;
+}
+
+.profiledropdown {
+    top: 65px;
+    position: absolute;
+    z-index: 1000;
+    background-color: white;
+    color: black;
+    right: 20px;
+    border-radius: 10px;
+    display: none;
+    flex-direction: column;
+    padding: 10px 10px 10px;
+    max-width: 280px;
+    min-width: 280px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    
+}
+
+.profiletop {
+    
+    
+    display: flex;
+    gap: 3px;
+}
+.profiletop h1 {
+    font-size: 15px;
+    
+}
+.profiletop p {
+    font-size: 12px;
+    color: #585858;
+    
+    max-width: 100px;
+    overflow: hidden;
+}
+.copy {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 15px 0px 0px;
+}
+.profiletop img {
+    max-height: 70px;
+    min-height: 70px;
+    max-width: 70px;
+    min-width: 70px;
+    border-radius: 50px;
+}
+.profiletop1 {
+    margin-top: 11px;
+    display: flex;
+    flex-direction: column;
+    line-height: 20px;
+    
+    width: 100%;
+}
+.profilebot1 button {
+    border: none;
+    background: transparent;
+    padding: 0px 10px;
+    margin-left: 30px;
+}
+.profilebot {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 2.5px solid #dadada;
+    padding: 1px 0px;
+    flex-direction: column;
+}
+.logout1 {
+    padding: 0px 25px;
+    color: black;
+    font-size: 15px;
+    border-radius: 5px;
+}
+.profilebot1 {
+    display: flex;
+    padding: 2px;
+    max-height: 40px;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    border: 1px solid transparent;
+}
+.profilebot1:hover {
+    background: #dbdbde;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.profilebot2 {
+    display: flex;
+    align-items: center;
+   
+    width: auto;
+    
+}
+.profilebot1 img {
+    height: 15px;
+}
+.profilebot2 img {
+    position: absolute;
+    height: 20px;
+}
+/* FOR LOGIN BUTTON POSTIONING*/
+
+.purchase, .bookmark {
+    display: none;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 1000;
+    top: 20px;
+        
+}
+.bookmark {
+    display: none;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 1000;
+    top: 20px;
+        
+}
+.purchase1 {
+    display: flex;
+    width: 50%;
+    height: 80%;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    color: black;
+    border: 2px solid white;
+    flex-direction: column;
+    gap: 10px;
+}
+.bookmark1 {
+    display: flex;
+    width: 30%;
+    height: 80%;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    color: black;
+    border: 2px solid white;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.purchasetop, .bookmarktop {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0px 5px;
+    align-items: center;
+    height: 10%;
+}
+.purchasetop h1, .bookmarktop h1 {
+    margin-left: 20px;
+}
+.purchase img, .bookmarke img {
+    height: 40px;
+    
+}
+.purchasebot, .bookmarkbot {
+    display: flex;
+    gap: 5px;
+    height: 90%;
+}
+
+.purchasel, .bookmarkl {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    
+    color: black;
+    gap: 40px;
+    align-items: center;
+    padding: 10px 10px;
+    border-right: 2px solid black;
+    height: 90%;
+}
+.purchasel1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 10px;
+    
+}
+.purchaser {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 68%;
+    height: 90%;
+    
+}
+.bookmarkr {
+    overflow: auto;
+    align-items: center;
+    width: 100%;
+    max-height: 90%;
+    gap: 5px;
+    display: flex;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+    flex-direction: column;
+    position: relative;
+}
+
+/* Target the scrollbar for Webkit-based browsers */
+.bookmarkr::-webkit-scrollbar {
+    height: 3px; /* Height of the horizontal scrollbar */
+    width: 4px;
+}
+
+/* Scrollbar track (the area behind the scroll thumb) */
+.bookmarkr::-webkit-scrollbar-track {
+    background: black; /* Dark background color */
+    border-radius: 5px; /* Optional: rounded corners */
+}
+
+/* Scrollbar thumb (the draggable part) */
+.bookmarkr::-webkit-scrollbar-thumb {
+    background: red; /* Red scroll thumb */
+    border-radius: 5px; /* Rounded corners for the thumb */
+}
+
+/* Hover effect for the scrollbar thumb */
+.bookmarkr::-webkit-scrollbar-thumb:hover {
+    background: #ff5555; /* Brighter red on hover */
+}
+.purchaser1 {
+    
+    display: flex;
+    
+    width: 70%;
+}
+.nofound {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.nofound img {
+    height: 200px;
+}
+.purchasel h1, .bookmarkl h1 {
+    font-size: 15px;
+}
+
+
+.purchaser2 {
+    display: none;
+}
+
+.bookmark-item {
+    
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: black;
+    color: white;
+    max-width: 90%; 
+    min-width: 90%;
+    height: 20%;
+    overflow: clip;
+    gap: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+.bookmark-item img {
+    height: auto;
+    max-width: 100px;
+    min-width: 100px;
+    
+    object-fit: cover;
+}
+.bookmark2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.bookmark2 button {
+    width: 50%;
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    background: transparent;
+}
+.bookmark2 button:hover {
+    background: white;
+    color: black;
+}
+
+
+
+.title {
+    margin: 100px 100px;
+    justify-content: space-around;
+    display: flex;
+  
+}
+.title h1 {
+    font-size: 40px;
+}
+.workoutsone .title button {
+    margin-top: 15px;
+    padding: 5px 10px;
+    background-color: white;
+    color: black;
+    border: 5px solid transparent;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.programs {
+    display: flex;
+    border: 5px solid transparent;
+    border-radius: 25px;
+    margin: 10px;
+    padding: 25px 0px;
+    background-color: #303031;
+    flex-direction: column;
+    min-height: 665px;
+    
+    
+}
+.programs .etitle {
+    
+    display: flex;
+    align-items: center;
+}
+.programs .container1 {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 500px;
+    width: 100%;
+    height: 100%;
+    
+}
+.programs .container2 {
+    display: flex;
+    
+    width: 100%;
+    margin-top: 35px;
+    
+    height: 100%;
+
+}
+.no-results {
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px;
+    display: none; /* Hidden by default */
+}
+.programs .container2 .container3 {
+    
+    display: flex;
+    padding-top: 5px; padding-bottom: 5px; padding-left: 5px;
+    width: auto;
+    flex-wrap: wrap;
+    height: 100%;
+    flex-direction: column;
+}
+.programsbox img {
+    height: 20px;
+}
+.programsbox1 img {
+    height: 20px;
+}
+.programs .container2 .programsbox a {
+    border: 5px solid transparent;
+    border-radius: 15px;
+    gap: 15px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    
+    width: 300px;
+    height: 100%;
+    font-size: 10px;
+    
+}
+.programs .container2 .programsbox1 a {
+    border: 5px solid transparent;
+    border-radius: 15px;
+    gap: 15px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    height: 100%;
+    font-size: 10px;
+    
+    
+}
+.programs .container2 .programsbox1 {
+    margin-top: 2px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border: 5px solid transparent;
+  
+    position: relative;
+    
+}
+.programsboxone {
+    border: 5px solid transparent;
+    font-size: 10px;
+    
+    margin-bottom: 0px;
+    position: relative;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+.programs .container2 .programsbox  {
+    display: flex;
+    border: 5px solid transparent;
+    width: 200px;
+    height: 100%;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    margin-bottom: 7px;
+    
+}
+
+.programsbox:hover {
+    background-color: #1c1c1c;
+}
+.programsbox1:hover {
+    background-color: #1c1c1c;
+}
+.programsboxone:hover {
+    background-color: #1c1c1c;
+}
+.programsbox.active {
+    background-color: #1c1c1c;
+}
+.programsbox1.active {
+    background-color: #1c1c1c;
+}
+.programsboxone.active {
+    background-color: #1c1c1c;
+}
+.container4 {
+    
+    
+    border-radius: 15px;
+    width: 100%;
+    min-height: 470px;
+    background-color: #1c1c1c;
+    display: flex;
+    gap: 20px;
+    padding: 20px 20px 0px;
+    overflow-x: auto;
+    box-sizing: border-box;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+    
+}
+
+.container4 {
+    display: none; /* Hide all sections by default */
+}
+
+/* Target the scrollbar for Webkit-based browsers */
+.container4::-webkit-scrollbar {
+    height: 7px; /* Height of the horizontal scrollbar */
+}
+
+/* Scrollbar track (the area behind the scroll thumb) */
+.container4::-webkit-scrollbar-track {
+    background: #333; /* Dark background color */
+    border-radius: 5px; /* Optional: rounded corners */
+}
+
+/* Scrollbar thumb (the draggable part) */
+.container4::-webkit-scrollbar-thumb {
+    background: white; /* Red scroll thumb */
+    border-radius: 5px; /* Rounded corners for the thumb */
+}
+
+/* Hover effect for the scrollbar thumb */
+.container4::-webkit-scrollbar-thumb:hover {
+    background: #ff5555; /* Brighter red on hover */
+}
+
+.workouts {
+    
+    flex: 0 1 auto;
+    display: flex;
+    min-width: 260px;
+    max-width: 260px;
+    height: 410px;
+    background-color: #303031;
+    flex-direction: column;
+    align-items: center;
+    overflow: clip;
+    border-radius: 15px;
+}
+.workouts img {
+    height: 200px;
+    background-size: cover;
+    width: 100%;
+}
+.workouts p {
+    margin-top: 25px;
+}
+
+.workouts2 {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    padding: 10px 20px;
+    gap: 10px;
+    border-radius: 15px;
+    margin: 20px 20px;
+    width: 160px;
+    border: 3px solid #303031;
+    cursor: pointer;
+}
+.workouts2 button {
+    background-color: transparent;
+    cursor: pointer;    
+    color: black;
+    border: 0;
+}
+.workouts2 img {
+    height: 25px;
+}
+.workouts2:hover {
+    border: 3px solid black;
+}
+.workouts3:hover, .workouts3r:hover {
+    border: 3px solid black;
+}
+.workouts3 {
+    cursor: pointer;
+    border: 3px solid #303031;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    padding: 10px 20px;
+    gap: 10px;
+    border-radius: 15px;
+    margin: 20px 20px;
+    width: 160px;
+}
+.workouts3 button {
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    border: 0;
+}
+
+.workouts3 img {
+    height: 25px;
+    
+}
+.workouts3r {
+    cursor: pointer;
+    border: 3px solid #303031;
+    background-color: #5dff6f;
+    display: flex;
+    justify-content: center;
+    padding: 10px 20px;
+    gap: 10px;
+    border-radius: 15px;
+    margin: 20px 20px;
+    width: 160px;
+}
+.workouts3 button, .workouts3r button {
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    border: 0;
+}
+.workouts3 img, .workouts3r img {
+    height: 25px;
+    
+}
+.etitle h1 {
+    background-color: #303031;
+}
+.search {
+    background-color: #1c1c1c;
+    border: 5px solid transparent;
+    border-radius: 15px;
+    width: 220px;
+    height: 60px;
+    align-items: center;
+    display: flex;
+    padding: 5px 10px;
+    color: white;
+}
+    
+.search .deco {
+    color: white;
+    text-decoration: none;
+    background-color: #1c1c1c;
+    border: 5px solid transparent;
+}
+
+.no-results, #globalNoResults {
+    font-size: 18px;
+    margin: 10px 0;
+    color: red;
+}
+
+.youtubepopup {
+    display: none;
+    
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.youtubepopup1 {
+    display: flex;
+    
+    
+}
+.youtubepopup1 iframe {
+    width: 100%;
+    aspect-ratio: 16/9;
+    height: 450px;
+    border: none;
+    
+}
+#overlay .close-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    
+    width: 40px;
+    height: 40px;
+    font-size: 45px;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+.footer {
+    background: black;
+}
+
+.f1 {
+    display: flex;
+    padding: 30px 20px;
+    justify-content: space-evenly;
+}
+.f2 {
+    
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 200px;
+}
+.f2 img {
+    height: 30px;
+}
+.f3 {
+    display: flex;
+    flex-direction: column;
+    vertical-align: top;
+    
+}
+.f3 a img {
+    height: 35px;
+    width: 35px;
+    cursor: pointer;
+}
+.f3img {
+    align-self: center;
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+.f3about p {
+    font-weight: 200;
+    padding-bottom: 5px;
+    color: #c4c4c4;
+}
+.f3about p:hover {
+    font-weight: 200;
+    padding-bottom: 5px;
+    color: white;
+    
+}
+.f3about {
+    margin-top: 20px;
+    
+}
+.btop {
+    gap: 30px;
+    display: flex;
+    justify-content: flex-end;
+}
+.btop a {
+    display: flex;
+    gap: 20px;
+}
+.btop img {
+    height: 20px;
+    transform: translateY(0%) rotate(180deg);
+}
+.btop1 {
+    margin-top: 20px; margin-bottom: 20px;
+    display: flex;
+    
+
+}
+.btop1 p {
+    color: #4f4f4f;
+}
+.btop2 {
+    margin-top: 20px; margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.outro {
+    padding-top: 10px; padding-bottom: 10px;
+    color: #4f4f4f;
+    text-align: center;
+}
+
+
+
+
+
+
+.alertoverlay {
+    top: 0;
+    position: fixed;
+    display: none;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    
+}
+.alert {
+    width: 25%;
+    height: 15%;
+    background: white;
+    z-index: 1000;
+    display: flex;
+    color: black;
+    border-radius: 10px;
+    flex-direction: column;
+    padding: 10px;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+
+.alert1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    width: 100%;
+    flex-wrap: wrap;
+}
+.alert1 h1 {
+    font-size: 15px;
+}
+.alert1 a {
+    font-size: 15px;
+    border: none;
+    background: none;
+    color: blue;
+    cursor: pointer;
+}
+.alert button {
+    width: 40%;
+    border-radius: 10px;
+    cursor: pointer;
+}
